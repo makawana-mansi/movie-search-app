@@ -8,7 +8,7 @@ const MovieDetail = () => {
 
     useEffect(() => {
         async function getMovie() {
-            const res = await fetch(`http://www.omdbapi.com/?&apikey=972deb25&i=${id}`)
+            const res = await fetch(`https://www.omdbapi.com/?&apikey=972deb25&i=${id}`)
             const data = await res.json()
             setMovie(data)
             console.log(data);
