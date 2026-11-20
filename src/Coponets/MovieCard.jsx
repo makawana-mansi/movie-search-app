@@ -7,7 +7,7 @@ const MovieCard = ({ movies }) => {
             <img alt={movies.Title} src={movies.Poster} />
             <h3>{movies.Title}</h3>
             <p>{movies.Year}</p>
-            <Link to={`movie/${movies.imdbID}`} data-discover="true">Details</Link>
+            <Link to={`movie/${movies.imdbID}`} className='border-b'>Details</Link>
         </div>
     )
 }

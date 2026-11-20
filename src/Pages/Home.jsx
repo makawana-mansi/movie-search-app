@@ -33,7 +33,7 @@ const Home = () => {
         <div className="home">
             <form onSubmit={hendleSubmit}>
                 <input ref={inputRef} className="searchInput" placeholder="Search for a movie..." />
-                <button type="submit">Search 🔎</button>
+                <button type="submit" className='rounded-xl border ml-2 p-2  border-gray-600 hover:border-green-300 '>Search 🔎</button>
             </form>
             {loding ? <p className='load'>Loading...</p> : <MovieList movie={movie} />}
 
